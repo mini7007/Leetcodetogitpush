@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>LeetCode Sync</title>
+    <style>
+      body { font-family: Arial, sans-serif; min-width: 300px; margin: 12px; }
+      label { display: block; margin-top: 10px; font-size: 13px; }
+      input { width: 100%; box-sizing: border-box; padding: 8px; margin-top: 4px; }
+      .row { margin-top: 10px; display: flex; justify-content: space-between; align-items: center; }
+      button { width: 100%; margin-top: 12px; padding: 8px; }
+      .meta { margin-top: 10px; color: #444; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <h3>LeetCode → GitHub</h3>
+
+    <label for="token">GitHub Token (PAT)</label>
+    <input id="token" type="password" placeholder="ghp_..." autocomplete="off" />
+
+    <label for="repo">Repo (owner/repo)</label>
+    <input id="repo" type="text" placeholder="username/leetcode" autocomplete="off" />
+
+    <div class="row">
+      <span>Auto Sync</span>
+      <input id="autoSync" type="checkbox" style="width:auto;" />
+    </div>
+
+    <button id="saveBtn">Save</button>
+
+    <div id="lastSynced" class="meta">Last synced: None</div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
